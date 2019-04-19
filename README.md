@@ -7,8 +7,7 @@ A small production environment for laravel.
 ## Set up
 - Clone repo, rename folder, and cd into
 - `sh run.sh`
-
-
+- In browser, go to http://localhost 
 
 
 ## Errata
