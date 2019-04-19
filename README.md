@@ -1,10 +1,13 @@
 
 A small production environment for laravel. 
 
-## App set up 
+### Env File
+Set up an `.env` file with PORT, URL, and LABEL.
+
+### App set up 
 - set up a new or existing project in the `<root>/app` folder. 
 
-## Set up
+### Set up
 - Clone repo, rename folder, and cd into
 - `sh run.sh`
 - In browser, go to http://localhost 
