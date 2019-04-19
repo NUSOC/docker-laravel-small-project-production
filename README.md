@@ -1,5 +1,6 @@
 
-Change of plans. Still working on this. 
+A small production environment for laravel. 
 
-## Taken from
-https://kyleferg.com/laravel-development-with-docker/?utm_source=laravelfeed.com
+## How
+- Clone repo, rename folder, and cd into
+- `sh run.sh`
