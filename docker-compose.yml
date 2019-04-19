@@ -2,8 +2,8 @@ version: '3'
 services:
     php-apache:
         image: php:7.2.1-apache
-        ports:
-            - $PORT:80
+        expose:
+            - "80"
         volumes:
             - ./app:/var/www/html:z
             - ./additional:/additional:z
