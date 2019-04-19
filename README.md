@@ -1,9 +1,14 @@
 
 A small production environment for laravel. 
 
-## How
+## App set up 
+- set up a new or existing project in the `<root>/app` folder. 
+
+## Set up
 - Clone repo, rename folder, and cd into
 - `sh run.sh`
+
+
 
 
 ## Errata
