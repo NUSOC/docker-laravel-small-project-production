@@ -8,10 +8,10 @@ services:
             - ./app:/var/www/html:z
             - ./additional:/additional:z
         labels:
-	    - traefik.enable=true
-	    - traefik.backend=$LABEL
-	    - traefik.docker.network=traefik_default
-	    - traefik.frontend.rule=Host:$URL
+            - traefik.enable=true
+            - traefik.backend=$LABEL
+            - traefik.docker.network=traefik_default
+            - traefik.frontend.rule=Host:$URL
 
 
 
