@@ -5,13 +5,18 @@ services:
         expose:
             - "80"
         volumes:
-            - ./app:/var/www/html:z
-            - ./additional:/additional:z
+            - ./laraapp:/var/www/html:z
+            - ./additional/000-default.conf:/etc/apache2/sites-available/000-default.conf:z
+        networks:
+            - traefik_default
         labels:
             - traefik.enable=true
             - traefik.backend=$LABEL
             - traefik.docker.network=traefik_default
             - traefik.frontend.rule=Host:$URL
-
+        
+networks:
+    traefik_default:
+        external: true
 
 
