@@ -1,14 +1,23 @@
 
 A small production environment for laravel. 
 
-## App set up 
-- set up a new or existing project in the `<root>/app` folder. 
 
 ## Set up
 - Clone repo, rename folder, and cd into
-- `sh run.sh`
-- In browser, go to http://localhost 
+- Set up `.env` file with URL and LABEL (for træfik)
 
+## laravel app set up 
+- set up a new or existing project in the `<root>/laraapp` folder. 
+- set up `laraapp/.env` file (database, etc)
+
+## Up
+- `docker-compose up` to build
+
+## quick fix
+- Permissions: If you get a 500 error on first go, run the following to map file user and groups back to `www-data`
+```
+docker-compose exec php-apache bash /additional/fix.permission.sh
+```
 
 ## Errata
 - The `/additional/` folder contains extra pieces. To start, 000-default.conf is overwritten so that the Doc Root becomes /var/www/html/public

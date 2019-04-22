@@ -5,6 +5,7 @@ services:
         expose:
             - "80"
         volumes:
+            - ./additional:/additional:z
             - ./laraapp:/var/www/html:z
             - ./additional/000-default.conf:/etc/apache2/sites-available/000-default.conf:z
         networks:
