@@ -15,8 +15,9 @@ touch additional/database.sqlite
 ```
 
 ## Start the Conainter
+Start up the container.
 ```
-docker-compose up -d` to build
+docker-compose up -d
 ```
 
 ## Post Install (and container restart)
