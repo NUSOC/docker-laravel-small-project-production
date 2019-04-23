@@ -9,7 +9,7 @@ A small production environment for laravel.
 ## laravel app set up 
 - set up a new or existing project in the `<root>/laraapp` folder. 
 - set up `laraapp/.env` file (database, etc)
-- blank database if needed `touch laraapp/database.sql` to have a sqlite3 database container ready
+- blank database if needed `touch additional/database.sqlite` to have a sqlite3 database container ready
 
 ## Up
 - `docker-compose up` to build
