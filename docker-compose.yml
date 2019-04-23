@@ -5,7 +5,7 @@ services:
         expose:
             - "80"
         volumes:
-            - ./additional/database.sqlite:/additional/database.sqlite
+            - ./additional/database.sqlite:/var/www/html/database/database.sqlite
             - ./additional:/additional:z
             - ./laraapp:/var/www/html:z
             - ./additional/000-default.conf:/etc/apache2/sites-available/000-default.conf:z

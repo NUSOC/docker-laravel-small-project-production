@@ -13,3 +13,19 @@ mv composer.phar /bin/composer
 chmod +x /bin/composer
 php -r "unlink('composer-setup.php');"
 cd
+
+
+echo APP INSTALL
+cd /var/www/html
+export COMPOSER_ALLOW_SUPERUSER=1
+composer install
+composer update
+
+echo MIGRATE
+php artisan migrate:refresh
+php artisan soc:reseed
+
+
+echo MOD REWIRTE
+a2enmod rewrite
+
