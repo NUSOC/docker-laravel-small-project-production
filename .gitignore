@@ -1,3 +1,6 @@
-laravel-app/
-laravel-app/.env
+.env
+laraapp/
+laraapp/*
+laraapp/.env
+additional/database.sqlite
 
